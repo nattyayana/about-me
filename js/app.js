@@ -1,80 +1,79 @@
 'use strict';
+var totalPointCounter = 0;
 
 // prompt
-alert('Do you Want to Play A Guessing Game About Natty');
+alert('Lets play a guessing game about natty');
 console.log('Lets Play');
 
 // instructions
-alert('Answer Questions With A yes or no!');
+alert('Please answer questions with a yes or no!');
 console.log('yes or no');
 
-
 //question one
-var shoeQuestion = prompt('Do you think natty has more then 100 pairs of shoes? Please enter "yes" or "no"').toLowerCase();
 
-if(shoeQuestion === 'no') {
-  alert('Your Right Natty Dose not lol If He Did He Would Give You A Pair!');
-} else {
-  alert('Nope! Natty Has About 40, Almost There');
-
+var jobQuestion = prompt('Did I go from a intern to full time employee at Microsoft? ').toLowerCase();
+console.log('Did Natty go from a intern to full time employee at Microsoft? ');
+if(jobQuestion === 'yes') {
+  alert('Yes i went from a 6 month internship, too a 1 year contract with Microsoft!');
+  console.log('Yes I went from a 6 month internship, too a 1 year contract with Microsoft');
+  totalPointCounter++;
+} else if(jobQuestion ==='no') {
+  alert('Nope! I was actually fortunate enought to be albe too ');
+  console.log('Nope! I was actually fortunate enought to be albe too ');
 }
-
-
-console.log('Do you think natty has more then 100 pairs of shoes? ' + shoeQuestion);
 
 // question two
-var travelQuestion = prompt('Do You Think Natty Has Left The United States Since He Came To American In 1997? Please enter "yes" or "no"').toLowerCase();
-
-if(travelQuestion === 'no') {
-  alert('That Is Correct, I Need Stop Flying Only Domestically, And Get Out The Country ');
-} else {
-  alert('I actually have not!');
+var stuQuestion = prompt(' Did I have his own recording studio? ').toLowerCase();
+console.log('Did I have his own recording studio?');
+if(stuQuestion === 'yes') {
+  alert('  Yes, it was located in downtown seattle!');
+  console.log('Yes, it was located in downtown seattle!');
+  totalPointCounter++;
+} else if(stuQuestion ==='no') {
+  alert('Nope! I was actually fortunate to do so! ');
+  console.log('Nope! I was actually fortunate to do so! ');
 }
-
-
-console.log('Do You Think Natty Has Left The United States Since He Came To American In 1997? ' + travelQuestion);
 
 
 // question three
-var hairQuestion = prompt('Do you think natty has been growing his hair less then 1 year? Please enter "yes" or "no"').toLowerCase();
-
-if(hairQuestion === 'no') {
-  alert('Yes, it has been about 4 years actually! ');
-} else {
-  alert('Nope! It would be amazing if my hair can grow that fast!');
+var bornQuestion = prompt(' Was I born in USA?  ').toLowerCase();
+console.log(' Was I born in USA? ');
+if(bornQuestion === 'yes') {
+  alert('  Nope, I was actually born in Ethiopia! ');
+  console.log('Nope, I was actually born in Ethiopia!');
+} else if(bornQuestion ==='no') {
+  alert('Correct! I was born in Ethiopia, actually! ');
+  console.log('Correct! I was born in Ethiopia, actually!  ');
+  totalPointCounter++;
 }
-
-
-console.log('Do you think natty has been growing his hair less then 1 year? ' + hairQuestion);
 
 // question four
-var sportQuestion = prompt('Is My Favorite Sport Rugby? Please enter "yes" or "no"').toLocaleLowerCase();
+var rallyQuestion = prompt(' Did i particapate in a protest rally with Martin luther King III?  ').toLowerCase();
+console.log(' Did i particapate in a protest rally with Martin luther King III? ');
+if(rallyQuestion === 'yes') {
+  alert(' Correct! It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing! ');
+  console.log('Correct! It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing!');
+  totalPointCounter++;
 
-
-if(sportQuestion === 'no') {
-  alert('Yes! you know me well already, I am more of a basketball guy!  ');
-} else {
-  alert('Nope! try again! ');
+} else if(rallyQuestion ==='no') {
+  alert('Wrong! I Actually did, It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing! ');
+  console.log('Wrong! I Actually did, It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing! ');
+  totalPointCounter++;
 }
-
-
-console.log('Is My Favorite Sport Rugby? ' + sportQuestion);
-
-
 
 // question five
-var schoolQuestion  = prompt('Did natty go to Harvard Law? Please enter "yes" or "no"').toLocaleLowerCase();
+var elQuestion = prompt(' Do i have a restored 1978 Chevy El Camino? ').toLowerCase();
+console.log(' Do i have a restored 1978 Chevy El Camino?  ');
+if(elQuestion === 'yes') {
+  alert(' Correct! It took my about 3 years to restore! ');
+  console.log('Correct! It took my about 3 years to restore!');
+  totalPointCounter++;
 
+} else if(rallyQuestion ==='no') {
+  alert('Wrong! I actually do its cherry red with black stripes, took 3 years ! ');
+  console.log('Wrong! I actually do its cherry red with black stripes, took 3 years ! ');
 
-if(schoolQuestion === 'no') {
-  alert('Correct! i never went to Harvard Law, only while sleeping ');
-} else {
-  alert('That was nice of you to think so, but i did not');
 }
-
-
-console.log('Did natty go to Harvard Law? ' + sportQuestion);
-
 
 //question six
 var certGuess = parseInt(prompt('Can you guess how many coding certificates I Have ? '));
@@ -85,6 +84,7 @@ while(numberOfGuess > 0) {
   if(certGuess === 1) {
     console.log('Correct! I have a Database Administration Certificate');
     alert('Correct! I have a Database Administration Certificate');
+    totalPointCounter++;
     break;
   }
   else if(certGuess > 1) {
@@ -111,9 +111,6 @@ while(numberOfGuess > 0) {
   console.log('The Number Of Guess is: ' , numberOfGuess);
 }
 
-
-
-// As a developer, I want to add a seventh question to my guessing game that has multiple possible correct answers that are stored in an array. For instance, "Can you guess a state that I have lived in besides Washington?", so that even more of my programming skills are showcased. For now, I will structure this question so that the user has six tries to get a single correct answer, and upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.
 
 //question 7
 
@@ -145,4 +142,7 @@ alert ('These are all the programs i wish to learn php, python, java, objective 
 
 //As a developer, I want to keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name, e.g. "You got 4 out of 7 questions correct, Bobbi! Better luck next time."
 
-//var solution = 0; ?????? 
+//var solution = 0; ??????
+
+alert (' you have ' + totalPointCounter + 'of points out of the possiable 7 points! ');
+console.log(' you have ' + totalPointCounter + ' of points out of the possiable 7 points! ');
