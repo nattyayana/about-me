@@ -1,5 +1,6 @@
 'use strict';
 
+//question one
 function jobQuestion(totalPointCounter){
 
   var jobQuestion = prompt('Did I go from a intern to full time employee at Microsoft? ').toLowerCase();
@@ -8,14 +9,87 @@ function jobQuestion(totalPointCounter){
     alert('Yes i went from a 6 month internship, too a 1 year contract with Microsoft!');
     console.log('Yes I went from a 6 month internship, too a 1 year contract with Microsoft');
     totalPointCounter++;
-  } else if(jobQuestion ==='no') {
+  }
+  else if(jobQuestion ==='no') {
     alert('Nope! I was actually fortunate enought to be albe too ');
     console.log('Nope! I was actually fortunate enought to be albe too ');
   }
   return totalPointCounter;
 }
 
+//question two
+function stuQuestion(totalPointCounter){
+  var stuQuestion = prompt(' Did I have his own recording studio? ').toLowerCase();
+  console.log('Did I have his own recording studio?');
+  if(stuQuestion === 'yes') {
+    alert('  Yes, it was located in downtown seattle!');
+    console.log('Yes, it was located in downtown seattle!');
+    totalPointCounter++;
+  }
+  else if(stuQuestion ==='no') {
+    alert('Nope! I was actually fortunate to do so! ');
+    console.log('Nope! I was actually fortunate to do so! ');
+  }
+  return totalPointCounter;
+}
+
+//question three
+function bornFunction(totalPointCounter){
+
+  var bornQuestion = prompt(' Was I born in USA?  ').toLowerCase();
+  console.log(' Was I born in USA? ');
+  if(bornQuestion === 'yes') {
+    alert('  Nope, I was actually born in Ethiopia! ');
+    console.log('Nope, I was actually born in Ethiopia!');
+  }
+  else if(bornQuestion ==='no') {
+    alert('Correct! I was born in Ethiopia, actually! ');
+    console.log('Correct! I was born in Ethiopia, actually!  ');
+    totalPointCounter++;
+  }
+
+  return totalPointCounter;
+}
+
+//question four
+function rallyQuestion(totalPointCounter){
+  
+  var rallyQuestion = prompt(' Did i particapate in a protest rally with Martin luther King III?  ').toLowerCase();
+  console.log(' Did i particapate in a protest rally with Martin luther King III? ');
+  if(rallyQuestion === 'yes') {
+    alert(' Correct! It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing! ');
+    console.log('Correct! It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing!');
+    totalPointCounter++;
+
+  }
+  else if(rallyQuestion ==='no') {
+    alert('Wrong! I Actually did, It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing! ');
+    console.log('Wrong! I Actually did, It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing! ');
+    totalPointCounter++;
+  }
+
+  return totalPointCounter;
+}
 var totalPointCounter = 0;
+
+// question five
+function elQuestion(totalPointCounter){
+
+  var elQuestion = prompt(' Do i have a restored 1978 Chevy El Camino? ').toLowerCase();
+  console.log(' Do i have a restored 1978 Chevy El Camino?  ');
+  if(elQuestion === 'yes') {
+    alert(' Correct! It took my about 3 years to restore! ');
+    console.log('Correct! It took my about 3 years to restore!');
+    totalPointCounter++;
+
+  }
+  else if(rallyQuestion ==='no') {
+    alert('Wrong! I actually do its cherry red with black stripes, took 3 years ! ');
+    console.log('Wrong! I actually do its cherry red with black stripes, took 3 years ! ');
+  }
+
+  return totalPointCounter;
+}
 
 // prompt
 alert('Lets play a guessing game about natty');
@@ -25,71 +99,16 @@ console.log('Lets Play');
 alert('Please answer questions with a yes or no!');
 console.log('yes or no');
 
-//question one
-
-var jobQuestion = prompt('Did I go from a intern to full time employee at Microsoft? ').toLowerCase();
-console.log('Did Natty go from a intern to full time employee at Microsoft? ');
-if(jobQuestion === 'yes') {
-  alert('Yes i went from a 6 month internship, too a 1 year contract with Microsoft!');
-  console.log('Yes I went from a 6 month internship, too a 1 year contract with Microsoft');
-  totalPointCounter++;
-} else if(jobQuestion ==='no') {
-  alert('Nope! I was actually fortunate enought to be albe too ');
-  console.log('Nope! I was actually fortunate enought to be albe too ');
-}
-
-// question two
-var stuQuestion = prompt(' Did I have his own recording studio? ').toLowerCase();
-console.log('Did I have his own recording studio?');
-if(stuQuestion === 'yes') {
-  alert('  Yes, it was located in downtown seattle!');
-  console.log('Yes, it was located in downtown seattle!');
-  totalPointCounter++;
-} else if(stuQuestion ==='no') {
-  alert('Nope! I was actually fortunate to do so! ');
-  console.log('Nope! I was actually fortunate to do so! ');
-}
 
 
 // question three
-var bornQuestion = prompt(' Was I born in USA?  ').toLowerCase();
-console.log(' Was I born in USA? ');
-if(bornQuestion === 'yes') {
-  alert('  Nope, I was actually born in Ethiopia! ');
-  console.log('Nope, I was actually born in Ethiopia!');
-} else if(bornQuestion ==='no') {
-  alert('Correct! I was born in Ethiopia, actually! ');
-  console.log('Correct! I was born in Ethiopia, actually!  ');
-  totalPointCounter++;
-}
+
 
 // question four
-var rallyQuestion = prompt(' Did i particapate in a protest rally with Martin luther King III?  ').toLowerCase();
-console.log(' Did i particapate in a protest rally with Martin luther King III? ');
-if(rallyQuestion === 'yes') {
-  alert(' Correct! It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing! ');
-  console.log('Correct! It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing!');
-  totalPointCounter++;
 
-} else if(rallyQuestion ==='no') {
-  alert('Wrong! I Actually did, It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing! ');
-  console.log('Wrong! I Actually did, It took place in Selma,Alabama for the 53rd anual Bloody Sunday bridge crossing! ');
-  totalPointCounter++;
-}
 
 // question five
-var elQuestion = prompt(' Do i have a restored 1978 Chevy El Camino? ').toLowerCase();
-console.log(' Do i have a restored 1978 Chevy El Camino?  ');
-if(elQuestion === 'yes') {
-  alert(' Correct! It took my about 3 years to restore! ');
-  console.log('Correct! It took my about 3 years to restore!');
-  totalPointCounter++;
 
-} else if(rallyQuestion ==='no') {
-  alert('Wrong! I actually do its cherry red with black stripes, took 3 years ! ');
-  console.log('Wrong! I actually do its cherry red with black stripes, took 3 years ! ');
-
-}
 
 //question six
 var certGuess = parseInt(prompt('Can you guess how many coding certificates I Have ? '));
