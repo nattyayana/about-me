@@ -91,87 +91,93 @@ function elQuestion(totalPointCounter){
   return totalPointCounter;
 }
 
+// question six
+function numberOfGuessesQuestion(totalPointCounter){
+
+  var certGuess = parseInt(prompt('Can you guess how many coding certificates I Have ? '));
+  console.log('Cert Guess', certGuess);
+  var numberOfGuess = 3;
+
+  while(numberOfGuess > 0) {
+    if(certGuess === 1) {
+      console.log('Correct! I have a Database Administration Certificate');
+      alert('Correct! I have a Database Administration Certificate');
+      totalPointCounter++;
+      break;
+    }
+    else if(certGuess > 1) {
+      alert('Too High!');
+      certGuess = prompt('Can you guess how many coding certificates I Have ?');
+      numberOfGuess--;
+    }
+
+    else if(certGuess < 1) {
+      alert('Too Low!');
+      certGuess = prompt('Can you guess how many coding certificates I Have ? ');
+      numberOfGuess--;
+    }
+    else {
+      certGuess = prompt('Please enter a number only! ');
+
+      console.log('Nope!');
+      numberOfGuess--;
+    }
+    if(numberOfGuess === 0) {
+      alert('You are out of guesses, however I do have 1 Certificate in Database Adminstration just so you know! ');
+    }
+
+    console.log('The Number Of Guess is: ' , numberOfGuess);
+  }
+
+  return totalPointCounter;
+}
+
+//question 7
+function myProgGuessQuestion(totalPointCounter){
+
+  var myprogGuess = ['php', 'python', 'java', 'objective c', 'javascript','ruby'];
+
+  console.log('User Program Guess', progGuess);
+
+  var numberGuess = 6;
+  for(var counter = 0; counter < numberGuess; counter++) {
+    var progGuess = prompt(' guess one of the computer programing language\'s i want to learn ? ');
+    for(var i = 0; i < myprogGuess.length; i++) {
+      console.log(i);
+      if(progGuess === myprogGuess [i]) {
+        counter = 10;
+        console.log('Correct!');
+        alert('Yes, that is one of the languages i want to learn');
+        break;
+      }
+      else {
+        console.log('Nope!');
+
+      }
+    }
+
+  }
+  alert ('These are all the programs i wish to learn php, python, java, objective c, javascript,ruby' );
+
+  return totalPointCounter;
+}
+
 // prompt
 alert('Lets play a guessing game about natty');
 console.log('Lets Play');
 
 // instructions
 alert('Please answer questions with a yes or no!');
-console.log('yes or no');
-
-
-
-// question three
-
-
-// question four
-
-
-// question five
+console.log('yes or no')
 
 
 //question six
-var certGuess = parseInt(prompt('Can you guess how many coding certificates I Have ? '));
-console.log('Cert Guess', certGuess);
-var numberOfGuess = 3;
 
-while(numberOfGuess > 0) {
-  if(certGuess === 1) {
-    console.log('Correct! I have a Database Administration Certificate');
-    alert('Correct! I have a Database Administration Certificate');
-    totalPointCounter++;
-    break;
-  }
-  else if(certGuess > 1) {
-    alert('Too High!');
-    certGuess = prompt('Can you guess how many coding certificates I Have ?');
-    numberOfGuess--;
-  }
-
-  else if(certGuess < 1) {
-    alert('Too Low!');
-    certGuess = prompt('Can you guess how many coding certificates I Have ? ');
-    numberOfGuess--;
-  }
-  else {
-    certGuess = prompt('Please enter a number only! ');
-
-    console.log('Nope!');
-    numberOfGuess--;
-  }
-  if(numberOfGuess === 0) {
-    alert('You are out of guesses, however I do have 1 Certificate in Database Adminstration just so you know! ');
-  }
-
-  console.log('The Number Of Guess is: ' , numberOfGuess);
-}
 
 
 //question 7
 
-var myprogGuess = ['php', 'python', 'java', 'objective c', 'javascript','ruby'];
 
-console.log('User Program Guess', progGuess);
-
-var numberGuess = 6;
-for(var counter = 0; counter < numberGuess; counter++) {
-  var progGuess = prompt(' guess one of the computer programing language\'s i want to learn ? ');
-  for(var i = 0; i < myprogGuess.length; i++) {
-    console.log(i);
-    if(progGuess === myprogGuess [i]) {
-      counter = 10;
-      console.log('Correct!');
-      alert('Yes, that is one of the languages i want to learn');
-      break;
-    }
-    else {
-      console.log('Nope!');
-
-    }
-  }
-
-}
-alert ('These are all the programs i wish to learn php, python, java, objective c, javascript,ruby' );
 
 
 
