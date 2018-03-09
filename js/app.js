@@ -34,7 +34,7 @@ function stuQuestion(totalPointCounter){
 }
 
 //question three
-function bornFunction(totalPointCounter){
+function bornQuestion(totalPointCounter){
 
   var bornQuestion = prompt(' Was I born in USA?  ').toLowerCase();
   console.log(' Was I born in USA? ');
@@ -162,28 +162,27 @@ function myProgGuessQuestion(totalPointCounter){
   return totalPointCounter;
 }
 
-// prompt
-alert('Lets play a guessing game about natty');
-console.log('Lets Play');
+function guessingGame(){
 
-// instructions
-alert('Please answer questions with a yes or no!');
-console.log('yes or no')
+  var totalPointCounter;
+  // prompt
+  alert('Lets play a guessing game about natty');
+  console.log('Lets Play');
 
+  // instructions
+  alert('Please answer questions with a yes or no!');
+  console.log('yes or no');
 
-//question six
+  totalPointCounter = jobQuestion(totalPointCounter);
+  totalPointCounter = stuQuestion(totalPointCounter);
+  totalPointCounter = elQuestion(totalPointCounter);
+  totalPointCounter = bornQuestion(totalPointCounter);
+  totalPointCounter = rallyQuestion(totalPointCounter);
+  totalPointCounter = numberOfGuessesQuestion(totalPointCounter);
+  totalPointCounter = myProgGuessQuestion(totalPointCounter);
+  alert (' you have ' + totalPointCounter + 'of points out of the possiable 7 points! ');
+  console.log(' you have ' + totalPointCounter + ' of points out of the possiable 7 points! ');
 
+}
 
-
-//question 7
-
-
-
-
-
-//As a developer, I want to keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name, e.g. "You got 4 out of 7 questions correct, Bobbi! Better luck next time."
-
-//var solution = 0; ??????
-
-alert (' you have ' + totalPointCounter + 'of points out of the possiable 7 points! ');
-console.log(' you have ' + totalPointCounter + ' of points out of the possiable 7 points! ');
+guessingGame();
