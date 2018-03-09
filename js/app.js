@@ -1,4 +1,20 @@
 'use strict';
+
+function jobQuestion(totalPointCounter){
+
+  var jobQuestion = prompt('Did I go from a intern to full time employee at Microsoft? ').toLowerCase();
+  console.log('Did Natty go from a intern to full time employee at Microsoft? ');
+  if(jobQuestion === 'yes') {
+    alert('Yes i went from a 6 month internship, too a 1 year contract with Microsoft!');
+    console.log('Yes I went from a 6 month internship, too a 1 year contract with Microsoft');
+    totalPointCounter++;
+  } else if(jobQuestion ==='no') {
+    alert('Nope! I was actually fortunate enought to be albe too ');
+    console.log('Nope! I was actually fortunate enought to be albe too ');
+  }
+  return totalPointCounter;
+}
+
 var totalPointCounter = 0;
 
 // prompt
