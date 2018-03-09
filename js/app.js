@@ -53,7 +53,7 @@ function bornQuestion(totalPointCounter){
 
 //question four
 function rallyQuestion(totalPointCounter){
-  
+
   var rallyQuestion = prompt(' Did i particapate in a protest rally with Martin luther King III?  ').toLowerCase();
   console.log(' Did i particapate in a protest rally with Martin luther King III? ');
   if(rallyQuestion === 'yes') {
@@ -70,7 +70,7 @@ function rallyQuestion(totalPointCounter){
 
   return totalPointCounter;
 }
-var totalPointCounter = 0;
+
 
 // question five
 function elQuestion(totalPointCounter){
@@ -164,7 +164,7 @@ function myProgGuessQuestion(totalPointCounter){
 
 function guessingGame(){
 
-  var totalPointCounter;
+  var totalPointCounter=0;
   // prompt
   alert('Lets play a guessing game about natty');
   console.log('Lets Play');
