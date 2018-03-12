@@ -1,7 +1,33 @@
-body {
-    background-color: grey;
-  }
+
+title { 
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+body { 
+  background-image:url("../background.jpg");
+
+  background-repeat:no-repeat;
+
+  background-size:cover;  
+}    
+
+h1 {
+    color: rgb(190, 13, 0);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+} 
+
   
-  h1 {
-    color: blue;
-  } 
+  img  { 
+    border-radius: 210px;
+    border-style: solid; 
+}
+
+  .center { 
+    margin-left: auto;
+    margin-right: auto; 
+    display: block; 
+  }
+ 
